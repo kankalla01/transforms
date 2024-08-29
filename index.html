@@ -5,10 +5,11 @@
     <style>
         .container {
             display: grid;
+            padding: 10px 10px 10px 10px;
+            gap: 20px;
 
             grid-template-areas: "img1 img2 img3 img4"
-                                 "img5 img6 img7 img8"
-                              "img9 img10 img11 img12";
+                "img5 img6 img7 img8";
         }
 
         .cl1:hover {
@@ -60,16 +61,20 @@
 
 
         }
+
         .cl6:hover {
-        transform: scale3d(1, 2, 2);
+            grid-area: img6;
+            width: 100%;
+            height: 100%;
+            transform: scale3d(1, 2, 2);
             transform: scale3d x(3);
             transform: scale3d y(2, 1, 3);
             box-shadow: 40px 25px 10px;
         }
 
 
-        .cl7 {
-            grid-area: img8;
+        .cl7:hover {
+            grid-area: img7;
             width: 100%;
             height: 100%;
             transform: translate3d(200px, 100px, 150px);
@@ -78,25 +83,15 @@
             box-shadow: 40px 25px 10px;
         }
 
-        .cl9 {
-            grid-area: img9;
+        .cl8:hover {
+            grid-area: img8;
             width: 100%;
             height: 100%;
             transform: perspective(550px)rotateX(60deg);
             box-shadow: 40px 25px 10px;
         }
-
-        .cl11 {
-            grid-area: img11;
-            width: 100%;
-            height: 100%;
-        }
-
-        .cl12 {
-            grid-area: img11;
-            width: 100%;
-            height: 100%;
-            box-shadow: 40px 25px 10px;
+/
+        box-shadow: 40px 25px 10px;
         }
 
         .card:hover {
@@ -139,7 +134,7 @@
         #b {
             position: absolute;
             padding: 6px;
-            padding-top: 2px;
+            */ padding-top: 2px;
             background-color: black;
             color: white;
         }
@@ -166,6 +161,7 @@
             padding-top: 2px;
             background-color: black;
             color: white;
+            */
         }
 
         #f {
@@ -197,59 +193,42 @@
 <body>
     <div class="container">
         <div class=" cl1">
-            <span id="e">Translate </span>
+            <span id="a">Translate</span>
+
             <img src="i1.jpg" width="100%" height="100%">
         </div>
         <div class=" cl2">
-            <span id="f">Scale</span>
+            <span id="b">Scale</span>
             <img src="i2.jpg" width="100%" height="100%">
         </div>
         <div class=" cl3">
-            <span id="g">Rotate</span>
+            <span id="c">Rotate</span>
             <img src="i3.jpg" width="100%" height="100%">
         </div>
         <div class=" cl4">
-            <span id="h">skew </span>
+            <span id="d">skew </span>
             <img src="i4.jpg" width="100%" height="100%">
         </div>
-            <div class=" cl5">
-                <span id="d">Rotate 3D</span>
-                <img src="salmon.jpg" width="100%" height="100%">
-            </div>
-                <div class=" cl6">
-                    <span id="b">Scale 3D </span>
-                    <img src="wine.jpg" width="100%" height="100%" style="position: relative;left: 50%;">
-                </div>
-                <!-- <div class="card">
-                    <span id="a">Translate 3D </span>
-                    <img src="i6.jpg" width="100%" height="100%">
-                </div> -->
-                
+        <div class=" cl5">
+            <span id="e">Rotate 3D</span>
+            <img src="salmon.jpg" width="100%" height="100%">
+        </div>
+        <div class=" cl6">
+            <span id="f">Scale 3D </span>
+            <img src="wine.jpg" width="100%" height="100%">
+        </div>
+        
+        <div class=" cl7">
+            <span id="g">Translate 3D </span>
+            <img src="steak.jpg" width="100%" height="100%">
+        </div>
 
-        <!-- <div class=" cl8"><img src="sandwich.jpg" width="100%" height="100%"></div> -->
-        <div class=" cl9"><img src="steak.jpg" width="100%" height="100%"></div>
-        <!-- <div class=" cl10"><img src="wine.jpg" width="100%" height="100%"></div> -->
-        <div class=" cl11"><img src="croissant.jpg" width="100%" height="100%"></div>
-        <div class=" cl12"><img src="cherries.jpg" width="100%" height="100%"></div>
-    </div>
-    <br>
-    <div class="card">
-        <span id="a">Translate 3D </span>
-        <img src="i6.jpg" width="28%" height="15%">
-    </div>
-    <br>
-    <div class=" cll">
-        <span id="b">Scale 3D </span>
-        <img src="wine.jpg" width="15%" height="4%" style="position: relative;left: 50%;">
-    </div>
-    <br>
-    <div class=" cl6">
-        <span id="c">perspective 3D </span>
-        <img src="popsicle.jpg" width="25%" height="10%" style="position: relative;left: 20%;">
-    </div>
-    <br>
-    <div class=" cl7"><span id="d">Rotate 3D</span>
-        <img src="salmon.jpg" width="25%" height="10%" style="position: relative;left: 60%;">
+       
+        <div class=" cl8">
+            <span id="h">perspective</span>
+            <img src="croissant.jpg" width="100%" height="100%">
+        </div>
+        
     </div>
 </body>
 
